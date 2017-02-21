@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond ${access:%{REMOTE_ADDR}} deny [NC]
+RewriteRule ^ - [L,F]
